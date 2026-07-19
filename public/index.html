@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Habibi Grill | Taste of the Middle East</title>
+<meta name="description" content="Order fresh Middle Eastern favorites from Habibi Grill in Omaha's Blackstone District.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div id="welcome" class="welcome">👋 <strong>Welcome to Habibi Grill!</strong></div>
+<header class="topbar">
+  <a class="brand" href="#top"><img src="assets/logo-transparent.png" alt="Habibi Grill"><span>HABIBI GRILL</span></a>
+  <nav><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#location">Location</a></nav>
+  <div id="status" class="status"><span></span><b>Checking…</b></div>
+  <button id="cartButton" class="cart-btn" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/loaded-fries.png"><source src="assets/hero.mp4" type="video/mp4"></video>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <img class="hero-logo" src="assets/logo-transparent.png" alt="Habibi Grill logo">
+    <p class="eyebrow">OMAHA • BLACKSTONE DISTRICT</p>
+    <h1>Taste of the <span>Middle East</span></h1>
+    <p>Fresh, bold, made to order — right here at 39th & Farnam.</p>
+    <div class="hero-actions"><a class="primary" href="#menu">Order Now</a><a class="secondary" href="#menu">View Menu</a></div>
+  </div>
+  <div class="scroll-cue">SCROLL TO EAT <b>↓</b></div>
+</section>
+
+<section class="order-methods reveal" aria-labelledby="orderMethodsTitle">
+  <div class="section-heading order-heading">
+    <p>CHOOSE WHAT WORKS FOR YOU</p>
+    <h2 id="orderMethodsTitle">How Would You Like to Order?</h2>
+  </div>
+  <div class="order-method-grid">
+    <article class="order-method-card featured">
+      <span class="method-badge">⭐ BEST VALUE</span>
+      <div class="method-icon">🛍️</div>
+      <h3>Pickup</h3>
+      <p>Order directly from Habibi Grill for fast pickup and our best online value.</p>
+      <div class="method-points"><span>✓ Direct ordering</span><span>✓ Apple Pay & Google Pay</span><span>✓ Fast pickup</span></div>
+      <a class="method-button primary-method" href="#menu">Start Pickup Order</a>
+    </article>
+    <article class="order-method-card">
+      <span class="method-badge delivery-badge">🚗 DELIVERY AVAILABLE</span>
+      <div class="method-icon">🚗</div>
+      <h3>Delivery</h3>
+      <p>Get your Habibi favorites delivered through your preferred delivery app.</p>
+      <div class="method-points"><span>DoorDash</span><span>Grubhub</span><span>Uber Eats</span></div>
+      <button id="openDelivery" class="method-button">Choose Delivery App</button>
+    </article>
+    <article class="order-method-card">
+      <span class="method-badge website-badge">🌐 DISCOVER HABIBI</span>
+      <div class="method-icon">🌐</div>
+      <h3>Visit Our Website</h3>
+      <p>See our story, catering details, hours, location, and everything Habibi Grill.</p>
+      <div class="method-points"><span>Truck information</span><span>Catering</span><span>Hours & location</span></div>
+      <a class="method-button" target="_blank" rel="noopener" href="https://habibigrillomaha.com">Visit HabibiGrillOmaha.com</a>
+    </article>
+  </div>
+  <div class="trust-strip">
+    <span>⭐ 4.9 Google Rating</span><span>🥙 Authentic Middle Eastern Food</span><span>📍 Blackstone • Omaha</span>
+  </div>
+</section>
+
+<section id="menu" class="menu-shell">
+  <div class="section-heading"><p>FRESH • FAST • FLAVORFUL</p><h2>Choose Your Favorite</h2></div>
+  <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search shawarma, burger, rice, fries…" autocomplete="off"><button id="clearSearch">×</button></div>
+  <div id="categoryTabs" class="tabs"></div>
+  <div id="menuGrid" class="menu-grid"></div>
+  <div id="empty" class="empty">No menu items found. Try another search.</div>
+</section>
+
+<section class="burger-feature reveal">
+  <video autoplay muted loop playsinline><source src="assets/burger.mp4" type="video/mp4"></video>
+  <div><p class="eyebrow">BURGERS DONE RIGHT</p><h2>Juicy. Crispy.<br><span>Made Fresh.</span></h2><p>Big flavor, fresh toppings, and that perfect first bite.</p><a class="primary" href="#menu" data-filter="Burgers">Shop Burgers</a></div>
+</section>
+
+<section class="experience reveal">
+  <div><p class="eyebrow">THE HABIBI EXPERIENCE</p><h2>More Than Great Food</h2><p>Good energy, late-night flavor, and a warm Habibi welcome every time.</p></div>
+  <video autoplay muted loop playsinline><source src="assets/experience.mp4" type="video/mp4"></video>
+</section>
+
+<section id="hours" class="info-grid reveal">
+  <article><span>🕒</span><h3>Hours</h3><p><b>Monday:</b> Closed</p><p><b>Tue, Wed & Sun:</b> 4:30 PM – 12:00 AM</p><p><b>Thu, Fri & Sat:</b> 4:30 PM – 2:30 AM</p></article>
+  <article id="location"><span>📍</span><h3>Find the Truck</h3><p>39th & Farnam St<br>Blackstone District<br>Omaha, Nebraska</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=39th+and+Farnam+St+Omaha+NE">Get Directions →</a></article>
+  <article><span>☎</span><h3>Need Help?</h3><p>Questions or help with your order? Call the truck directly.</p><a href="tel:+15314447691">531-444-7691 →</a></article>
+</section>
+</main>
+
+<footer>
+  <div><img src="assets/logo-transparent.png" alt="Habibi Grill"><p>Fresh Middle Eastern food in the heart of Omaha.</p></div>
+  <div class="socials">
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/habibi_grill25/" aria-label="Instagram">◎ <span>Instagram</span></a>
+    <a target="_blank" rel="noopener" href="https://www.facebook.com/search/top?q=habibi-grill25" aria-label="Facebook">f <span>Facebook</span></a>
+    <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Habibi+Grill+Omaha" aria-label="Google reviews">★ <span>Google Reviews</span></a>
+  </div>
+  <p class="copyright">© 2026 Habibi Grill • HabibiGrillOmaha.com</p>
+</footer>
+
+<a class="call-float" href="tel:+15314447691"><span>☎</span><b>Call the Truck</b><small>Questions about your order?</small></a>
+
+
+<div id="deliveryModal" class="modal delivery-modal" aria-hidden="true">
+  <div class="modal-card delivery-card">
+    <button id="closeDelivery" class="close">×</button>
+    <p class="eyebrow">DELIVERY PARTNERS</p>
+    <h2>Choose Your Delivery App</h2>
+    <p class="delivery-intro">Pick the platform you prefer and we’ll send you directly to Habibi Grill.</p>
+    <div class="delivery-options">
+      <a class="delivery-option doordash" target="_blank" rel="noopener" href="https://www.doordash.com/store/37678825">
+        <div><span class="delivery-logo">D</span><strong>DoorDash</strong></div>
+        <b>$0 Delivery Fee</b><small>Order on DoorDash →</small>
+      </a>
+      <a class="delivery-option grubhub" target="_blank" rel="noopener" href="https://www.grubhub.com/restaurant/habibi-grill-3861-farnam-st-omaha/13747288?utm_source=grubhub_iosapp&utm_medium=content_owned&utm_campaign=menushare&utm_content=share-link">
+        <div><span class="delivery-logo">G</span><strong>Grubhub</strong></div>
+        <b>$0 Delivery Fee</b><small>Order on Grubhub →</small>
+      </a>
+      <a class="delivery-option ubereats" target="_blank" rel="noopener" href="https://www.ubereats.com/store/habibi-grill/PpR49oWIX8SNoyvkffurfw">
+        <div><span class="delivery-logo">U</span><strong>Uber Eats</strong></div>
+        <b>Delivery fees may apply</b><small>Order on Uber Eats →</small>
+      </a>
+    </div>
+    <p class="delivery-note">Delivery availability, prices, promotions, and fees may vary by platform and location.</p>
+  </div>
+</div>
+
+<div id="infoModal" class="modal info-modal" aria-hidden="true"><div class="modal-card info-card"><button id="closeInfoModal" class="close">×</button><div id="infoModalBody"></div></div></div>
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-card"><button id="closeModal" class="close">×</button><div id="modalBody"></div></div></div>
+<aside id="cartDrawer" class="cart-drawer"><div class="cart-head"><h2>Your Order</h2><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><button id="checkoutButton" class="checkout">Secure Checkout</button><small>Payments are securely processed by Square.</small></div></aside>
+<div id="checkoutModal" class="modal checkout-modal" aria-hidden="true"><div class="modal-card checkout-card"><button id="closeCheckout" class="close">×</button><p class="eyebrow">SECURE SQUARE CHECKOUT</p><h2>Complete Your Order</h2><div class="customer-fields"><label>Name<input id="customerName" autocomplete="name" placeholder="Your name"></label><label>Phone<input id="customerPhone" autocomplete="tel" inputmode="tel" placeholder="(531) 000-0000"></label><label>Email (optional)<input id="customerEmail" autocomplete="email" inputmode="email" placeholder="you@example.com"></label></div><label class="sms-consent"><input id="smsConsent" type="checkbox" checked> Send me text updates about my order.</label><div class="tip-panel"><h3>Add a Tip</h3><div id="tipOptions" class="tip-options"><button type="button" data-tip="0" class="active">No Tip</button><button type="button" data-tip="5">5%</button><button type="button" data-tip="10">10%</button><button type="button" data-tip="15">15%</button><button type="button" data-tip="20">20%</button></div></div><div class="checkout-summary"><div><span>Subtotal</span><b id="checkoutSubtotal">$0.00</b></div><div><span>Tax (9.68%)</span><b id="checkoutTax">$0.00</b></div><div><span>Tip</span><b id="checkoutTip">$0.00</b></div><div class="total"><span>Total</span><b id="checkoutTotal">$0.00</b></div></div><div id="wallets" class="wallets"><button id="applePayButton" class="wallet-button apple" type="button" hidden> Pay</button><div id="google-pay-button" hidden></div><div class="or"><span>or pay by card</span></div></div><div id="card-container"></div><p id="paymentStatus" class="payment-status"></p><button id="payButton" class="modal-add" disabled>Pay <span id="payTotal">$0.00</span></button><small class="secure-note">🔒 Payments are securely processed by Square. Card details are never stored on this website.</small></div></div>
+<div id="successModal" class="modal" aria-hidden="true"><div class="modal-card success-card"><button id="closeSuccess" class="close">×</button><div class="success-icon">✓</div><h2>Order Received!</h2><p>Your payment was approved and your pickup order was sent to Square.</p><div id="successDetails"></div><a id="receiptLink" class="primary" target="_blank" rel="noopener" hidden>View Receipt</a></div></div>
+<div id="backdrop" class="backdrop"></div>
+<script src="app.js"></script>
+</body></html>
